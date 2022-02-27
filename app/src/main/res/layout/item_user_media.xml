@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/grid_3"
+    android:paddingBottom="@dimen/grid_3">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_media_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_3"
+        android:layout_marginEnd="@dimen/grid_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_more_vert_24" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_media_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_3"
+        android:textColor="@color/color_9"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/item_media_more"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_media_more"
+        tools:text="john_doe" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/item_media_image_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/item_media_image_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_media_username" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_media_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_3"
+        android:layout_marginTop="@dimen/grid_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_media_image_viewpager"
+        app:srcCompat="@drawable/outline_favorite_border_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_media_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_3"
+        android:layout_marginTop="@dimen/grid_3"
+        app:layout_constraintStart_toEndOf="@id/item_media_favorite"
+        app:layout_constraintTop_toBottomOf="@id/item_media_image_viewpager"
+        app:srcCompat="@drawable/outline_mode_comment_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_media_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_3"
+        android:layout_marginTop="@dimen/grid_3"
+        app:layout_constraintStart_toEndOf="@id/item_media_comment"
+        app:layout_constraintTop_toBottomOf="@id/item_media_image_viewpager"
+        app:srcCompat="@drawable/outline_send_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_media_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_3"
+        android:layout_marginEnd="@dimen/grid_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_media_image_viewpager"
+        app:srcCompat="@drawable/outline_bookmark_border_24" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/item_media_image_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_1"
+        app:layout_constraintBottom_toBottomOf="@id/item_media_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_media_favorite"
+        app:tabBackground="@drawable/ind_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingEnd="@dimen/grid_1"
+        app:tabPaddingStart="@dimen/grid_1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_media_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_3"
+        android:layout_marginTop="@dimen/grid_1"
+        android:textColor="@color/color_13"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_media_favorite"
+        tools:text="26 February 2022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
