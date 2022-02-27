@@ -1,4 +1,4 @@
-package com.pm.woltersgram.feature_media.domain.model.error
+package com.pm.woltersgram.core.domain.error
 
 object ErrorCodes {
     const val ERROR_GENERAL = 1000

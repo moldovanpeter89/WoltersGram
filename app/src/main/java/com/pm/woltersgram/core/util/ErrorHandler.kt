@@ -2,7 +2,7 @@ package com.pm.woltersgram.core.util
 
 import android.content.Context
 import com.pm.woltersgram.R
-import com.pm.woltersgram.feature_media.domain.model.error.ErrorCodes
+import com.pm.woltersgram.core.domain.error.ErrorCodes
 
 object ErrorHandler {
 

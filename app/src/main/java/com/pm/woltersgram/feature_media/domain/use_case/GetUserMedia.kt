@@ -1,7 +1,7 @@
 package com.pm.woltersgram.feature_media.domain.use_case
 
 import com.pm.woltersgram.core.util.Resource
-import com.pm.woltersgram.feature_media.domain.model.error.ErrorCodes
+import com.pm.woltersgram.core.domain.error.ErrorCodes
 import com.pm.woltersgram.feature_media.domain.model.media.Media
 import com.pm.woltersgram.feature_media.domain.repository.MediaRepository
 import kotlinx.coroutines.flow.Flow
