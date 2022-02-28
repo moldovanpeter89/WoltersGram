@@ -3,7 +3,9 @@ package com.pm.woltersgram.feature_media.presentation
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import com.pm.woltersgram.core.domain.error.ErrorCodes
+import com.pm.woltersgram.feature_media.data.FakeMediaRepository
 import com.pm.woltersgram.feature_media.domain.use_case.GetUserMedia
+import com.pm.woltersgram.feature_media.rule.MainCoroutineRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking

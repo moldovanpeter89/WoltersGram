@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WolterGramPost</string>
+    <string name="app_name">WoltersGram</string>
     <string name="error_general">Oops, something Went Wrong.</string>
     <string name="error_no_internet">Couldn\'t reach server, check Internet connection!</string>
     <string name="error_timeout">Couldn\'t reach server, please try again later.</string>

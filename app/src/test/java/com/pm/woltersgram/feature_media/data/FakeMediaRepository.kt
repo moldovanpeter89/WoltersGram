@@ -1,4 +1,4 @@
-package com.pm.woltersgram.feature_media.presentation
+package com.pm.woltersgram.feature_media.data
 
 import com.pm.woltersgram.feature_media.domain.model.media.Cursors
 import com.pm.woltersgram.feature_media.domain.model.media.Media

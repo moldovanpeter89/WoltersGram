@@ -1,4 +1,4 @@
-package com.pm.woltersgram.feature_media.presentation
+package com.pm.woltersgram.feature_media.rule
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
